@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Fraunces", ui-serif, serif;
+  --font-body: "IBM Plex Sans", ui-sans-serif, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  * {
+    @apply border-line;
+  }
+
+  html {
+    scroll-behavior: auto; /* Lenis takes over; keep native fallback sane */
+  }
+
+  body {
+    @apply bg-paper text-ink font-body text-body antialiased;
+    cursor: none; /* replaced by <Cursor /> on pointer:fine devices */
+  }
+
+  @media (pointer: coarse) {
+    body {
+      cursor: auto;
+    }
+  }
+
+  ::selection {
+    background: theme("colors.signal.dim");
+    color: theme("colors.signal.DEFAULT");
+  }
+
+  /* Visible, deliberate focus states — never suppressed */
+  :focus-visible {
+    outline: 2px solid theme("colors.signal.DEFAULT");
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: theme("colors.paper");
+  }
+  ::-webkit-scrollbar-thumb {
+    background: theme("colors.line");
+    border-radius: 999px;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .label-caps {
+    @apply font-mono text-label uppercase tracking-[0.14em] text-ink-60;
+  }
+
+  .hairline {
+    @apply border-t border-line;
+  }
+
+  /* Editorial text-mask reveal, used by <RevealText /> */
+  .reveal-mask {
+    overflow: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
