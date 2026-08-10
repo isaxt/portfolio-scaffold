@@ -63,13 +63,12 @@ const config: Config = {
         label: ["0.75rem", { lineHeight: "1", letterSpacing: "0.08em" }],
       },
       spacing: {
-        // 4px base with a few named landmarks used across the layout system
-        18: "4.5rem",
-        22: "5.5rem",
-        30: "7.5rem",
-        section: "clamp(5rem, 12vw, 10rem)",
-        gutter: "clamp(1.25rem, 4vw, 3rem)",
-      },
+  18: "4.5rem",
+  22: "5.5rem",
+  30: "7.5rem",
+  section: "clamp(3rem, 7vw, 6.5rem)", // was: clamp(5rem, 12vw, 10rem)
+  gutter: "clamp(1.25rem, 4vw, 3rem)",
+},
       maxWidth: {
         content: "1200px",
         prose: "68ch",

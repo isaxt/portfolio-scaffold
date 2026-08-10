@@ -4,6 +4,7 @@ import { PortraitOrbit } from "@/components/hero/PortraitOrbit";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { projectCategories } from "@/lib/data/projects";
+import { FunThings } from "@/components/ui/FunThings";
 
 export default function Home() {
   return (
@@ -50,6 +51,9 @@ export default function Home() {
           </div>
         </Section>
       ))}
+      <Section eyebrow="Fun Things" eyebrowVariant="category" className="border-t border-line">
+        <FunThings />
+      </Section>
     </>
   );
 }
