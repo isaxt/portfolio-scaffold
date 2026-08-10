@@ -21,6 +21,13 @@ const SKILLS = [
   "Multimedia Art",
 ];
 
+const RIGHT_NOW = [
+  { label: "Building", value: "This portfolio, iteratively" },
+  { label: "Exploring", value: "Trust calibration in agentic interfaces" },
+  { label: "Reading", value: "Add what you're reading" },
+  { label: "Listening to", value: "Add an artist / album" },
+];
+
 export default function About() {
   return (
     <div className="pt-40">
@@ -124,6 +131,22 @@ export default function About() {
               ))}
             </div>
           </aside>
+        </div>
+      </Section>
+
+      <Section eyebrow="Right now" className="border-t border-line">
+        <div className="grid grid-cols-1 gap-x-12 gap-y-6 sm:grid-cols-2">
+          {RIGHT_NOW.map((item) => (
+            <div key={item.label} className="flex items-start gap-3">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-signal" />
+              <div>
+                <p className="font-mono text-label uppercase tracking-[0.1em] text-ink-60">
+                  {item.label}
+                </p>
+                <p className="mt-1 text-body text-prose">{item.value}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </Section>
     </div>

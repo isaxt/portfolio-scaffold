@@ -24,8 +24,8 @@ export function Cursor() {
 
   const x = useMotionValue(-100);
   const y = useMotionValue(-100);
-  const springX = useSpring(x, { stiffness: 500, damping: 40, mass: 0.4 });
-  const springY = useSpring(y, { stiffness: 500, damping: 40, mass: 0.4 });
+  const springX = useSpring(x, { stiffness: 900, damping: 50, mass: 0.2 });
+  const springY = useSpring(y, { stiffness: 900, damping: 50, mass: 0.2 });
 
   useEffect(() => {
     setIsCoarse(!window.matchMedia("(pointer: fine)").matches);
