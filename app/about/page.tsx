@@ -22,10 +22,10 @@ const SKILLS = [
 ];
 
 const RIGHT_NOW = [
-  { label: "Building", value: "This portfolio, iteratively" },
-  { label: "Exploring", value: "Trust calibration in agentic interfaces" },
-  { label: "Reading", value: "Add what you're reading" },
-  { label: "Listening to", value: "Add an artist / album" },
+  { label: "Building", value: "This portfolio, iteratively + textile installation" },
+  { label: "Exploring", value: "Trust calibration in agentic interfaces + corporate web design" },
+  { label: "Reading", value: "Anything by Jasmine Sun" },
+  { label: "Listening to", value: "6arelyhuman, asteria, or kets4eki" },
 ];
 
 export default function About() {
