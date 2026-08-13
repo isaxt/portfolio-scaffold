@@ -52,6 +52,9 @@ export default function Home() {
         </Section>
       ))}
       <Section eyebrow="Fun Things" eyebrowVariant="category" className="border-t border-line">
+        <p className="mb-8 max-w-prose text-body text-ink-60">
+          Cool projects I&rsquo;ve been a part of!
+        </p>
         <FunThings />
       </Section>
     </>
