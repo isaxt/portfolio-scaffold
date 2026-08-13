@@ -1,3 +1,4 @@
+import { OutAndAbout } from "@/components/ui/OutAndAbout";
 import Image from "next/image";
 import { Section } from "@/components/layout/Section";
 import { Tag } from "@/components/ui/Tag";
@@ -149,6 +150,14 @@ export default function About() {
           ))}
         </div>
       </Section>
+
+      <Section eyebrow="Isa out and about" className="border-t border-line">
+        <p className="mb-8 max-w-prose text-body text-ink-60">
+          Me, my friends, and the fun stuff in between.
+        </p>
+        <OutAndAbout />
+      </Section>
+      
     </div>
   );
 }
