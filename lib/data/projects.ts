@@ -50,7 +50,7 @@ export const projectCategories: ProjectCategory[] = [
         cardImage: "/projects/dreamee/dreamee_logo.jpg",
         caseStudy: {
           tagline:
-            "A VR platform that generates adaptive worlds based on real-time EEG engagement signals — helping users discover what genuinely resonates with them through exploration, not instruction.",
+            "A VR platform that reads real-time EEG engagement signals to quietly reshape the world around you, using biometric feedback, not instructions, to reveal what actually holds someone's attention.",
           meta: [
             { label: "Year", value: "2025" },
             { label: "Role", value: "VR Interface Design, EEG Integration, UX" },
@@ -62,21 +62,21 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "",
               paragraphs: [
-                "Most self-discovery tools tell you what to do: take this quiz, answer these prompts, follow this framework. Dream.ee takes the opposite approach — give people freedom, watch what they do with it, and let genuine behavior reveal what language never could.",
-                "Rooted in the concept of Ikigai, Dream.ee is a VR platform running on Meta Quest 3 that places users inside AI-generated worlds with no instructions and no goals. As they explore, the system reads their EEG engagement signals in real time via a BrainBit brain-computer interface. When interest begins to drop, a background agent quietly surfaces a prompt for the next world — one shaped by everything the system has observed so far.",
+                "Most self-discovery tools tell you what to do: take this quiz, answer these prompts, follow this framework. Dream.ee takes the opposite approach: give people freedom, watch what they do with it, and let genuine behavior reveal what language never could.",
+                "Rooted in the concept of Ikigai, Dream.ee is a VR platform running on Meta Quest 3 that places users inside AI-generated worlds with no instructions and no goals. As they explore, the system reads their EEG engagement signals in real time via a BrainBit brain-computer interface. When interest begins to drop, a background agent quietly surfaces a prompt for the next world, one shaped by everything the system has observed so far.",
               ],
             },
             {
               heading: "VR Interface & Immersion Design",
               paragraphs: [
                 "I built the immersive VR interface in Unity, designing the environments and interaction flows that support the self-reflection workflow. The central challenge was maintaining presence throughout: world transitions had to feel seamless, never pulling users out of the experience to remind them they're inside a system.",
-                "I designed the transition UX specifically around non-intrusion — when the boredom detector fires and a new world is ready, the handoff is handled through careful preloading, object lifecycle management, and timing so that the swap feels like a natural shift in space rather than a loading screen. The EEG setup UI and voice-prompt interface were also designed to fade into the background, keeping the user's attention on the world itself.",
+                "I designed the transition UX specifically around non-intrusion: when the boredom detector fires and a new world is ready, the handoff is handled through careful preloading, object lifecycle management, and timing so that the swap feels like a natural shift in space rather than a loading screen. The EEG setup UI and voice-prompt interface were also designed to fade into the background, keeping the user's attention on the world itself.",
               ],
             },
             {
               heading: "EEG Integration",
               paragraphs: [
-                "Integrating the BrainBit SDK into the real-time interaction pipeline was one of the more technically involved parts of my contribution. The hardware itself presented an unexpected challenge — the device was labelled Brain Bit 1 but required the Brain Bit 2 SDK, with an entirely different set of backend functions for sensing, connecting, and streaming data. Working through that undocumented discrepancy was a significant portion of the integration work.",
+                "Integrating the BrainBit SDK into the real-time interaction pipeline was one of the more technically involved parts of my contribution. The hardware itself presented an unexpected challenge: the device was labelled Brain Bit 1 but required the Brain Bit 2 SDK, with an entirely different set of backend functions for sensing, connecting, and streaming data. Working through that undocumented discrepancy was a significant portion of the integration work.",
                 "Once connected, EEG signals feed into a lightweight in-memory analytics service that scores engagement based on dwell time, interaction frequency, and attention proxies derived from the brain data. The result is a feedback loop where the user's own neurology shapes what they experience next.",
               ],
             },
@@ -117,7 +117,7 @@ export const projectCategories: ProjectCategory[] = [
         cardImage: "/projects/unsubtle/unsubtle.png",
         caseStudy: {
           tagline:
-            "An XR system that uses real-time computer vision to detect and visualize body language on Meta Quest — making non-verbal communication more visible, intuitive, and inclusive.",
+            "An XR system that renders body language as real-time visual feedback inside a headset, translating invisible non-verbal cues into a legible, supportive interface for people who communicate non-verbally.",
           meta: [
             { label: "Year", value: "2025" },
             { label: "Role", value: "XR Interface Design, Interaction Design, User Research" },
@@ -129,24 +129,24 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "",
               paragraphs: [
-                "Non-verbal communication is full of signals that many people rely on without realizing it — a crossed arm, a shift in posture, the subtle tension in someone's shoulders. For individuals who struggle with verbal communication, or those supporting them, these cues can be the primary channel. Unsubtle makes them visible.",
-                "The project originated from personal experiences working with students in special-needs classrooms — a recognition that the challenge isn't a lack of expression, but a lack of tools to bridge the gap between what someone communicates and what others perceive. Unsubtle uses computer vision to detect body language in real time and renders it as accessible visual feedback directly in a Meta Quest 3 headset.",
+                "Non-verbal communication is full of signals that many people rely on without realizing it, a crossed arm, a shift in posture, the subtle tension in someone's shoulders. For individuals who struggle with verbal communication, or those supporting them, these cues can be the primary channel. Unsubtle makes them visible.",
+                "The project originated from personal experiences working with students in special-needs classrooms, a recognition that the challenge isn't a lack of expression, but a lack of tools to bridge the gap between what someone communicates and what others perceive. Unsubtle uses computer vision to detect body language in real time and renders it as accessible visual feedback directly in a Meta Quest 3 headset.",
               ],
               quote:
-                "We built something with the potential to help people feel more understood — especially those whose communication needs are often overlooked.",
+                "We built something with the potential to help people feel more understood, especially those whose communication needs are often overlooked.",
             },
             {
               heading: "Interface & Interaction Design",
               paragraphs: [
-                "My work focused on the real-time visualization layer inside the headset: designing how detected body language is represented on-screen in a way that's legible, non-stigmatizing, and genuinely useful in the moment. The system renders a user's skeleton and dynamically changes its color to reflect recognized poses — crossed arms signaling defensiveness, open posture signaling engagement — translating invisible cues into clear, immediate visual language.",
-                "I also designed the microgesture interaction system, which lets users send discreet, low-effort signals to others — an emoji, a short phrase like \"I need personal space\" — without requiring speech. These outputs sync across colocated XR devices via a shared networking layer, which I helped implement and stabilize to ensure UI state and display data remained consistent for all participants simultaneously.",
+                "My work focused on the real-time visualization layer inside the headset: designing how detected body language is represented on-screen in a way that's legible, non-stigmatizing, and genuinely useful in the moment. The system renders a user's skeleton and dynamically changes its color to reflect recognized poses, crossed arms signaling defensiveness, open posture signaling engagement, translating invisible cues into clear, immediate visual language.",
+                "I also designed the microgesture interaction system, which lets users send discreet, low-effort signals to others: an emoji, a short phrase like \"I need personal space,\" without requiring speech. These outputs sync across colocated XR devices via a shared networking layer, which I helped implement and stabilize to ensure UI state and display data remained consistent for all participants simultaneously.",
               ],
             },
             {
               heading: "Research & Grounding",
               paragraphs: [
                 "Throughout development I conducted user research with educators and caregivers to make sure the interaction model reflected real-world needs rather than assumptions. A recurring finding: the tool had to feel supportive, not diagnostic. Body language should be treated as a cue to understanding, never a verdict. That principle shaped every design decision, from the color system to the phrasing of microgesture outputs.",
-                "The backend runs a fine-tuned pose estimation model on a FastAPI server, receiving image data from the headset via POST requests and returning detected positions for real-time rendering — a hybrid architecture we pivoted to after finding on-device inference too unstable for the live use case.",
+                "The backend runs a fine-tuned pose estimation model on a FastAPI server, receiving image data from the headset via POST requests and returning detected positions for real-time rendering, a hybrid architecture we pivoted to after finding on-device inference too unstable for the live use case.",
               ],
             },
           ],
@@ -177,7 +177,7 @@ export const projectCategories: ProjectCategory[] = [
         cardImage: "/projects/atlas/atlas.png",
         caseStudy: {
           tagline:
-            "A modular, digitally connected on-body drug delivery system that reimagines chronic care — interchangeable needle heads, reusable cartridges, and a companion ecosystem that puts patients first.",
+            "A modular, digitally connected on-body drug delivery system, designed from patient field research to replace medicalized hardware with something built around adherence, dignity, and everyday life.",
           meta: [
             { label: "Year", value: "2025" },
             { label: "Role", value: "Product Design, UX Research, System Design" },
@@ -190,29 +190,29 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "",
               paragraphs: [
-                "When patients are diagnosed with a chronic condition, their lives change dramatically — often demanding obtrusive daily routines, expensive treatments, and devices that feel less like tools and more like burdens. On-body drug delivery systems keep patients tethered to rigid, medicalized hardware that signals illness to the world. ATLAS asks: what if it didn't have to?",
-                "The Automatic Treatment Lifestyle Assistive System is a modular, reusable OBDS platform designed from the ground up around the patient's lived experience. It replaces the typical plunger-driven injection mechanism with a peristaltic micropump — inspired by how IV drips work — ensuring sterility without direct drug-surface contact, and enabling compatibility with a far wider range of fluid viscosities.",
+                "When patients are diagnosed with a chronic condition, their lives change dramatically, often demanding obtrusive daily routines, expensive treatments, and devices that feel less like tools and more like burdens. On-body drug delivery systems keep patients tethered to rigid, medicalized hardware that signals illness to the world. ATLAS asks: what if it didn't have to?",
+                "The Automatic Treatment Lifestyle Assistive System is a modular, reusable OBDS platform designed from the ground up around the patient's lived experience. It replaces the typical plunger-driven injection mechanism with a peristaltic micropump, inspired by how IV drips work, ensuring sterility without direct drug-surface contact, and enabling compatibility with a far wider range of fluid viscosities.",
               ],
             },
             {
               heading: "Modular System Architecture",
               paragraphs: [
-                "At the core of ATLAS is modularity: interchangeable needle heads — hypodermic or transdermal microneedle arrays — let patients and clinicians choose the least invasive delivery method for their treatment. A reusable cartridge system clicks in and out cleanly, with a secure latch mechanism that prevents accidental removal mid-dose and releases automatically once delivery is complete.",
-                "The outer shell uses medical-grade silicone over a polyamide-polyethylene internal structure, reinforced with a graphene nanocomposite scaffold for strength and lightness. Breathable, sweat-resistant synthetic mesh adhesives in a range of inclusive skin tones replace the irritating residue-heavy adhesives common in current-day OBDS designs — making the device feel like a second skin, not a medical fixture.",
+                "At the core of ATLAS is modularity: interchangeable needle heads (hypodermic or transdermal microneedle arrays) let patients and clinicians choose the least invasive delivery method for their treatment. A reusable cartridge system clicks in and out cleanly, with a secure latch mechanism that prevents accidental removal mid-dose and releases automatically once delivery is complete.",
+                "The outer shell uses medical-grade silicone over a polyamide-polyethylene internal structure, reinforced with a graphene nanocomposite scaffold for strength and lightness. Breathable, sweat-resistant synthetic mesh adhesives in a range of inclusive skin tones replace the irritating residue-heavy adhesives common in current-day OBDS designs, making the device feel like a second skin, not a medical fixture.",
               ],
             },
             {
               heading: "Digital Companion Ecosystem",
               paragraphs: [
-                "ATLAS pairs with a detachable smartwatch that docks directly onto the unit or a bedside speaker station. The companion app handles adherence tracking, prescription management, caregiver coordination, and direct contact with healthcare providers — turning the isolated, often overwhelming experience of chronic care into a connected, supported routine.",
+                "ATLAS pairs with a detachable smartwatch that docks directly onto the unit or a bedside speaker station. The companion app handles adherence tracking, prescription management, caregiver coordination, and direct contact with healthcare providers, turning the isolated, often overwhelming experience of chronic care into a connected, supported routine.",
                 "The digital interface is designed for accessibility across all ages: high-contrast, legible UI for older adults; playful, expressive color customization options for children; and a neutral, low-profile mode for patients who want the system to disappear into daily life. The device reframes treatment not as a clinical obligation but as a quiet, steady companion.",
               ],
             },
             {
               heading: "Research & Patient Grounding",
               paragraphs: [
-                "Every design decision in ATLAS is grounded in direct patient testimony. We conducted field research with OBDS users managing Type 1 Diabetes and bone-density treatment, identifying recurring pain points: weight and bulk, stigmatizing visibility, forgotten doses, and the cognitive burden of managing multiple medications simultaneously. These insights — not assumptions — drove the design from first principles.",
-                "We also conducted a thorough prior art review across existing OBDS platforms (enFuse, Omnipod, Vertiva), relevant patents, and materials research into graphene composites, microneedle arrays, and double-eyelid crease adhesives — informing both the mechanical and material innovations that distinguish ATLAS from the field.",
+                "Every design decision in ATLAS is grounded in direct patient testimony. We conducted field research with OBDS users managing Type 1 Diabetes and bone-density treatment, identifying recurring pain points: weight and bulk, stigmatizing visibility, forgotten doses, and the cognitive burden of managing multiple medications simultaneously. These insights, not assumptions, drove the design from first principles.",
+                "We also conducted a thorough prior art review across existing OBDS platforms (enFuse, Omnipod, Vertiva), relevant patents, and materials research into graphene composites, microneedle arrays, and double-eyelid crease adhesives, informing both the mechanical and material innovations that distinguish ATLAS from the field.",
               ],
             },
           ],
@@ -245,7 +245,7 @@ export const projectCategories: ProjectCategory[] = [
         cardImage: "/projects/curiosity-agent/curiousity.png",
         caseStudy: {
           tagline:
-            "A clip-worn camera and AI system that asks you questions about the world you're moving through — rather than answering them. Designed to support curiosity, not replace it.",
+            "A wearable AI system that asks questions instead of answering them, designed to resist the cognitive offload most AI tools invite, one prompt-tuned question at a time.",
           meta: [
             { label: "Year", value: "2026" },
             { label: "Role", value: "IoT Design, Prompt Engineering, Dashboard UX" },
@@ -258,32 +258,32 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "",
               paragraphs: [
-                "Most AI tools are built around a single premise: you have a question, it has an answer. Curiosity Agent inverts that entirely. Instead of offloading thinking to a machine, it asks you to do more of it — gently, through questions surfaced as you move through the world.",
-                "The project started from a concern about cognitive offload: the quiet habit of letting AI do our reasoning for us. We wanted to design an agent that actively supports human flourishing — not by providing answers, but by nurturing the instinct to question.",
+                "Most AI tools are built around a single premise: you have a question, it has an answer. Curiosity Agent inverts that entirely. Instead of offloading thinking to a machine, it asks you to do more of it, gently, through questions surfaced as you move through the world.",
+                "The project started from a concern about cognitive offload: the quiet habit of letting AI do our reasoning for us. We wanted to design an agent that actively supports human flourishing, not by providing answers, but by nurturing the instinct to question.",
               ],
             },
             {
               heading: "The Device",
               paragraphs: [
-                "At its core, the hardware is an AI-Thinker ESP32-CAM clipped to clothing, sending real-time images over the local network to a Raspberry Pi base station. The Pi passes those images to Claude through a carefully crafted prompt, and the response — a single question — is delivered through the user's own earbuds. No screen, no app to manage, nothing to interrupt the moment.",
-                "Questions are drawn from one of six registers: Observational, Social, Intentional, Prior Life, Predictive, and Absence. The model selects the register based on what the scene calls for — a quiet street gets a different kind of question than a crowded market.",
+                "At its core, the hardware is an AI-Thinker ESP32-CAM clipped to clothing, sending real-time images over the local network to a Raspberry Pi base station. The Pi passes those images to Claude through a carefully crafted prompt, and the response, a single question, is delivered through the user's own earbuds. No screen, no app to manage, nothing to interrupt the moment.",
+                "Questions are drawn from one of six registers: Observational, Social, Intentional, Prior Life, Predictive, and Absence. The model selects the register based on what the scene calls for, a quiet street gets a different kind of question than a crowded market.",
               ],
             },
             {
               heading: "The Dashboard & E-Ink Display",
               paragraphs: [
-                "When you get home, the experience shifts. A dashboard surfaces the day's curiosities: the questions asked, the places that generated them, and synthesized themes across the registers. The display hardware was a deliberate design choice — e-ink is slow, persistent, and doesn't pulse or refresh. It shows a record of what kept catching your attention, not a feed demanding more of it.",
+                "When you get home, the experience shifts. A dashboard surfaces the day's curiosities: the questions asked, the places that generated them, and synthesized themes across the registers. The display hardware was a deliberate design choice, e-ink is slow, persistent, and doesn't pulse or refresh. It shows a record of what kept catching your attention, not a feed demanding more of it.",
                 "The Pi and e-ink display were fitted inside a custom 3D-printed dock, designed as a physical ritual object: something you place the camera into when you return, and pick up again when you leave.",
               ],
             },
             {
               heading: "Prompt Engineering & the Six Registers",
               paragraphs: [
-                "Getting questions that were genuinely meaningful — not generic, not trivial — required significant work on the prompt architecture. A poorly tuned prompt produces questions that feel like a quiz. The goal was to produce questions that feel like they came from a thoughtful companion who noticed something you almost walked past.",
+                "Getting questions that were genuinely meaningful, not generic, not trivial, required significant work on the prompt architecture. A poorly tuned prompt produces questions that feel like a quiz. The goal was to produce questions that feel like they came from a thoughtful companion who noticed something you almost walked past.",
                 "Each of the six registers required its own framing logic, and the model needed enough scene context to choose the right one. Image quality and framing proved as important as the language of the prompt itself.",
               ],
               quote:
-                "Other AIs answer. This one questions. — The premise that shaped every design decision, from the hardware form factor to the rhythm of daily use.",
+                "Other AIs answer. This one questions. The premise that shaped every design decision, from the hardware form factor to the rhythm of daily use.",
             },
           ],
           sidebar: [
@@ -329,7 +329,7 @@ export const projectCategories: ProjectCategory[] = [
         cardImage: "/projects/synthra/synthra.jpg",
         caseStudy: {
           tagline:
-            "An AI-powered platform where you speak your mood and a personal DJ generates the track — paired with real-time procedural visualizations for a fully immersive audio-visual experience.",
+            "An AI-powered music platform where a spoken mood becomes a generated track and real-time procedural visuals, designed to lower the barrier between someone and their own creative expression.",
           meta: [
             { label: "Year", value: "2025" },
             { label: "Role", value: "Frontend & Logo Design, Visual Aesthetics" },
@@ -341,22 +341,22 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "",
               paragraphs: [
-                "Art and music aren't always accessible — there are unspoken rules, social barriers, and the quiet pressure of needing to \"know what you're doing.\" Synthra was built to remove all of that. Speak your mood, describe a vibe, say almost anything — and Synthra's AI DJ turns it into a track made just for you.",
-                "Built at HackMIT, Synthra is a full-stack web platform that uses Suno's API to generate original music from a spoken or typed prompt, then analyzes the resulting audio to drive a real-time procedural visualization using Hydra's video synthesizer. The result is a unique audio-visual identity for every generation — something you made, even if you've never made music before.",
+                "Art and music aren't always accessible: there are unspoken rules, social barriers, and the quiet pressure of needing to \"know what you're doing.\" Synthra was built to remove all of that. Speak your mood, describe a vibe, say almost anything, and Synthra's AI DJ turns it into a track made just for you.",
+                "Built at HackMIT, Synthra is a full-stack web platform that uses Suno's API to generate original music from a spoken or typed prompt, then analyzes the resulting audio to drive a real-time procedural visualization using Hydra's video synthesizer. The result is a unique audio-visual identity for every generation, something you made, even if you've never made music before.",
               ],
             },
             {
               heading: "How It Works",
               paragraphs: [
-                "The experience begins with your voice. OpenAI's speech-to-text converts your prompt into a natural language description, which is passed to Suno's API to generate a full AI-composed track. Simultaneously, the audio is analyzed and its features are mapped to Hydra's visualization parameters — producing an animation that evolves with the song's texture, rhythm, and energy.",
+                "The experience begins with your voice. OpenAI's speech-to-text converts your prompt into a natural language description, which is passed to Suno's API to generate a full AI-composed track. Simultaneously, the audio is analyzed and its features are mapped to Hydra's visualization parameters, producing an animation that evolves with the song's texture, rhythm, and energy.",
                 "The visualizations are procedurally generated using formal grammar systems, meaning each one follows structural rules but never repeats the same output. The visual language grows organically from the music itself, not from a fixed template.",
               ],
             },
             {
               heading: "My Contribution",
               paragraphs: [
-                "I led frontend design and was responsible for the overall visual language of the platform — including the logo, layout, typography, and aesthetic direction. My goal was to make the interface feel like a creative space rather than a tool: low-pressure, visually alive, and inviting to people who don't see themselves as artists.",
-                "Working alongside teammates handling backend infrastructure, the Suno integration, and the AI DJ speech pipeline, I focused on ensuring the visual output felt cohesive and considered — that the look of Synthra matched the freedom it was trying to offer.",
+                "I led frontend design and was responsible for the overall visual language of the platform, including the logo, layout, typography, and aesthetic direction. My goal was to make the interface feel like a creative space rather than a tool: low-pressure, visually alive, and inviting to people who don't see themselves as artists.",
+                "Working alongside teammates handling backend infrastructure, the Suno integration, and the AI DJ speech pipeline, I focused on ensuring the visual output felt cohesive and considered, that the look of Synthra matched the freedom it was trying to offer.",
               ],
             },
           ],
@@ -397,7 +397,7 @@ export const projectCategories: ProjectCategory[] = [
         cardImage: "/projects/post-agi-lab/adobeLab.jpg",
         caseStudy: {
           tagline:
-            "A speculative web experience and philosophical inquiry into what human creativity means — and why it still matters — when generative AI can simulate its every output.",
+            "A speculative web interface and critical essay, built with Adobe, examining what happens to the meaning of creative work when generative AI can simulate its every output.",
           meta: [
             { label: "Year", value: "2026" },
             { label: "Role", value: "Designer, Researcher, Author" },
@@ -410,8 +410,8 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "",
               paragraphs: [
-                "This project began with a personal question. Growing up in Silicon Valley as the child of Italian and Chinese immigrants — both cultures where making things carefully, by hand, over time, is understood as one of the central activities of a human life — I found myself caught between two worlds: one obsessed with building \"the next big thing\" in software, and one that understood that how something is made is inseparable from what it means.",
-                "As generative AI accelerated, the conversations around me shifted. Designers and artists who had built careers on creative judgment began asking not just whether they would lose work, but something more painful — whether the meaning they had drawn from their practice still held. Whether making something carefully, with intention, out of the experiences of a life being lived, still mattered.",
+                "This project began with a personal question. Growing up in Silicon Valley as the child of Italian and Chinese immigrants, both cultures where making things carefully, by hand, over time, is understood as one of the central activities of a human life, I found myself caught between two worlds: one obsessed with building \"the next big thing\" in software, and one that understood that how something is made is inseparable from what it means.",
+                "As generative AI accelerated, the conversations around me shifted. Designers and artists who had built careers on creative judgment began asking not just whether they would lose work, but something more painful, whether the meaning they had drawn from their practice still held. Whether making something carefully, with intention, out of the experiences of a life being lived, still mattered.",
               ],
               quote:
                 "Generative AI does not merely automate creative labor. It simulates the appearance of creative meaning while severing the conditions that make meaning possible.",
@@ -420,21 +420,21 @@ export const projectCategories: ProjectCategory[] = [
               heading: "The Philosophical Argument",
               paragraphs: [
                 "Drawing on Walter Benjamin's theory of the aura, John Dewey's philosophy of expression, Richard Sennett and Yanagi Sōetsu's ethics of craft, and Howard Becker's sociology of art worlds, the project argues that what GenAI threatens is not the existence of creative work, but the legibility of its meaning.",
-                "Dewey understood genuine artistic expression as \"a construction in time — a prolonged interaction of something issuing from the self with objective conditions.\" GenAI has no organism, no hunger, no need pressing into the world. Its outputs are not expressions in Dewey's sense. There is no life being lived, and thus no art being made — only the sophisticated appearance of it. As Ted Chiang has written, it is \"a fundamentally dehumanizing technology because it treats us as less than what we are: creators and apprehenders of meaning. It reduces the amount of intention in the world.\"",
+                "Dewey understood genuine artistic expression as \"a construction in time, a prolonged interaction of something issuing from the self with objective conditions.\" GenAI has no organism, no hunger, no need pressing into the world. Its outputs are not expressions in Dewey's sense. There is no life being lived, and thus no art being made, only the sophisticated appearance of it. As Ted Chiang has written, it is \"a fundamentally dehumanizing technology because it treats us as less than what we are: creators and apprehenders of meaning. It reduces the amount of intention in the world.\"",
               ],
             },
             {
               heading: "The Speculative Interface",
               paragraphs: [
-                "Developed in collaboration with Adobe and informed by Adobe's own research into creativity in the age of AI, the project takes the form of an experimental web environment — a space where these philosophical tensions are made navigable and visual. The interface invites users to move through ideas about aura, craft, embodiment, and cultural resistance, drawing connections between the history of art worlds and the present rupture of generative AI.",
-                "The design itself enacts the argument. Slow, deliberate, built from particular formal choices rather than optimized templates — it insists on the conditions of meaning-making that the paper describes. The interface is not a demonstration of AI capability. It is a demonstration of what remains when AI handles everything else.",
+                "Developed in collaboration with Adobe and informed by Adobe's own research into creativity in the age of AI, the project takes the form of an experimental web environment, a space where these philosophical tensions are made navigable and visual. The interface invites users to move through ideas about aura, craft, embodiment, and cultural resistance, drawing connections between the history of art worlds and the present rupture of generative AI.",
+                "The design itself enacts the argument. Slow, deliberate, built from particular formal choices rather than optimized templates, it insists on the conditions of meaning-making that the paper describes. The interface is not a demonstration of AI capability. It is a demonstration of what remains when AI handles everything else.",
               ],
             },
             {
               heading: "What Remains",
               paragraphs: [
-                "The project's central claim is ultimately optimistic: the cultural response to GenAI will follow a recognizable historical pattern. When a dominant technology colonizes the conventional aesthetic space, the counterpressure is a migration toward the margins — the idiosyncratic, the difficult, and the deliberately handmade. As Yanagi Sōetsu observed of industrial production, \"the call to return to the handicrafts will undoubtedly never fade. For it is in the handicraft that ultimate creative freedom exists, where true beauty is possible.\"",
-                "What GenAI cannot do is communicate from a life to a life. It cannot carry, in Chiang's words, \"your unique life experience\" arriving \"at a particular moment in the life of whoever is seeing your work.\" That presence — the presence of a human being who made something because they needed to, in the specific conditions of their specific life — is what is at stake. And it is what this project was made to preserve.",
+                "The project's central claim is ultimately optimistic: the cultural response to GenAI will follow a recognizable historical pattern. When a dominant technology colonizes the conventional aesthetic space, the counterpressure is a migration toward the margins, the idiosyncratic, the difficult, and the deliberately handmade. As Yanagi Sōetsu observed of industrial production, \"the call to return to the handicrafts will undoubtedly never fade. For it is in the handicraft that ultimate creative freedom exists, where true beauty is possible.\"",
+                "What GenAI cannot do is communicate from a life to a life. It cannot carry, in Chiang's words, \"your unique life experience\" arriving \"at a particular moment in the life of whoever is seeing your work.\" That presence, the presence of a human being who made something because they needed to, in the specific conditions of their specific life, is what is at stake. And it is what this project was made to preserve.",
               ],
             },
           ],
@@ -480,7 +480,7 @@ export const projectCategories: ProjectCategory[] = [
         cardImage: "/projects/computational-fluidity/comp_fluid.jpg",
         caseStudy: {
           tagline:
-            "A speculative web experience exploring the political potential of digital failure — glitch, noise, and system breakdown as sites of cultural meaning, queer resistance, and media-theoretical inquiry.",
+            "A speculative web experience treating digital failure (glitch, noise, breakdown) as a site of political and cultural meaning, built from deliberate formal instability rather than optimized templates.",
           meta: [
             { label: "Year", value: "2026" },
             { label: "Role", value: "Designer, Researcher, Author" },
@@ -493,8 +493,8 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "",
               paragraphs: [
-                "Computational fluidity describes the condition of digital systems to operate, fail, and generate meaning along a spectrum rather than within a binary — and the political potential that emerges when we recognize this condition as structural rather than accidental. It is not a description of broken technology, but an analytical concept for understanding how digital systems expose, mirror, and subvert the binaries through which culture, identity, and power are organized.",
-                "The project intervenes at the intersection of media infrastructure, queer theory, and the politics of the interface. What we call errors — glitches, bugs, unexpected outputs — are not deviations from how technology works, but revelations of how it has always worked. Seamless interfaces conceal the labor, exclusions, and decisions embedded within them. Computational fluidity is the name for the friction between what systems do and what they pretend to be.",
+                "Computational fluidity describes the condition of digital systems to operate, fail, and generate meaning along a spectrum rather than within a binary, and the political potential that emerges when we recognize this condition as structural rather than accidental. It is not a description of broken technology, but an analytical concept for understanding how digital systems expose, mirror, and subvert the binaries through which culture, identity, and power are organized.",
+                "The project intervenes at the intersection of media infrastructure, queer theory, and the politics of the interface. What we call errors (glitches, bugs, unexpected outputs) are not deviations from how technology works, but revelations of how it has always worked. Seamless interfaces conceal the labor, exclusions, and decisions embedded within them. Computational fluidity is the name for the friction between what systems do and what they pretend to be.",
               ],
               quote:
                 "What gets called noise, what gets treated as error, and what gets patched out of existence are always political questions: whose outputs count as valid, whose behaviors count as correct, whose failures are instructive, and whose are merely inconvenient.",
@@ -502,21 +502,21 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "Theoretical Framework",
               paragraphs: [
-                "Three bodies of scholarship converge to make this argument. Friedrich Kittler's media materialism establishes that technical systems encode logics that restructure the conditions of human thought and expression. Legacy Russell's Glitch Feminism reframes failure as the system's most honest expression — the moment when its constructed nature is exposed. The QueerOS framework extends this into design politics, proposing systems that refuse the ideology of optimization and embrace the generative instability of queer existence.",
+                "Three bodies of scholarship converge to make this argument. Friedrich Kittler's media materialism establishes that technical systems encode logics that restructure the conditions of human thought and expression. Legacy Russell's Glitch Feminism reframes failure as the system's most honest expression, the moment when its constructed nature is exposed. The QueerOS framework extends this into design politics, proposing systems that refuse the ideology of optimization and embrace the generative instability of queer existence.",
                 "These frameworks require one another. Kittler gives us the determining logic of systems, Russell gives us the revelatory logic of their failure, and QueerOS gives us the political horizon that opens when we stop treating failure as deviation. Rosa Menkman's glitch art practice serves as the primary object: a body of work that enacts, rather than merely illustrates, this convergence.",
               ],
             },
             {
               heading: "Genealogy",
               paragraphs: [
-                "The genealogy of computational fluidity begins with Alan Turing — and one of the most productive ironies in the history of technology. Turing's 1950 imitation game staged the question of machine intelligence as parallel to the question of gender performance, implying that both operate as learned, imitative systems. His own fate makes this irony devastating: the foundational theorist of binary computation was punished by a state that determined his body was operating outside its intended parameters. He was, in Russell's terms, a human glitch that the system tried to patch.",
+                "The genealogy of computational fluidity begins with Alan Turing, and one of the most productive ironies in the history of technology. Turing's 1950 imitation game staged the question of machine intelligence as parallel to the question of gender performance, implying that both operate as learned, imitative systems. His own fate makes this irony devastating: the foundational theorist of binary computation was punished by a state that determined his body was operating outside its intended parameters. He was, in Russell's terms, a human glitch that the system tried to patch.",
                 "Judith Butler's theory of gender performativity further clarifies this dynamic. Gender, like computation, operates through iteration, repetition, and the possibility of deviance. Her concept of resignification maps precisely onto the logic of computational fluidity: an output that, through failing to conform, reveals the constructedness of the norm from which it deviates.",
               ],
             },
             {
               heading: "The Speculative Interface",
               paragraphs: [
-                "The creative component of the project takes the form of an experimental web environment — a space where these philosophical tensions are made navigable and visual. The interface enacts the argument: built from deliberate formal instability rather than optimized templates, it insists on the conditions that seamlessness is designed to suppress. The design is not a demonstration of glitch as aesthetic. It is a demonstration of what becomes legible when the seams show.",
+                "The creative component of the project takes the form of an experimental web environment, a space where these philosophical tensions are made navigable and visual. The interface enacts the argument: built from deliberate formal instability rather than optimized templates, it insists on the conditions that seamlessness is designed to suppress. The design is not a demonstration of glitch as aesthetic. It is a demonstration of what becomes legible when the seams show.",
               ],
             },
           ],
@@ -557,7 +557,7 @@ export const projectCategories: ProjectCategory[] = [
         cardImage: "/projects/finance-cigarette-culture/finance.jpg",
         caseStudy: {
           tagline:
-            "A simulated hedge fund analyst's desktop — transforming a familiar Windows 11–like interface into a reflective space on the rituals, abstractions, and human residue of financial life in New York City.",
+            "A simulated Windows 11 desktop reimagined as a reflective space on the rituals and residue of financial life in New York City, built from field research along Broadway and 5th Avenue.",
           meta: [
             { label: "Year", value: "2025" },
             { label: "Role", value: "Designer, Researcher, Author" },
@@ -570,23 +570,23 @@ export const projectCategories: ProjectCategory[] = [
               heading: "",
               paragraphs: [
                 "The project began with a walk. Starting at Madison Square Park and moving north along Broadway and 5th Avenue toward Bryant Park, I observed a ritual playing out in the margins of corporate space: finance workers stepping out of glass towers to smoke, eat, and momentarily exist outside the architecture of capital.",
-                "Those cigarette butts — scattered near the facades of UBS and JP Morgan, ground into the pavement outside office lobbies — became the entry point. A residue of the financial body dispersed through urban space. Small artifacts of stress and indulgence, tracing an ecology that connects individuals, economies, and waste in ways the Bloomberg terminal never would.",
+                "Those cigarette butts, scattered near the facades of UBS and JP Morgan, ground into the pavement outside office lobbies, became the entry point. A residue of the financial body dispersed through urban space. Small artifacts of stress and indulgence, tracing an ecology that connects individuals, economies, and waste in ways the Bloomberg terminal never would.",
               ],
               quote:
-                "The cigarette persists as a physical residue — a small act of resistance and reflection within the circuitry of finance.",
+                "The cigarette persists as a physical residue, a small act of resistance and reflection within the circuitry of finance.",
             },
             {
               heading: "The Interface",
               paragraphs: [
-                "The project takes the form of a simulated Windows 11 desktop — the analyst's workspace, recreated as a reflective environment. Familiar icons open into different dimensions of financial life. This PC reveals the stock market graphs that structure an analyst's daily reality, visualizing capital's abstraction. Photos holds the images I took around Midtown: cigarette butts outside finance buildings, quiet remnants of habit and relief. Substack contains my written reflections on the ecology of finance and leisure across New York City.",
-                "The Substack window is deliberately designed to mirror the act of stepping outside for a smoke — a small break from digital chaos, a moment of embodied pause within an increasingly immaterial economy. The written reflection and the cigarette occupy the same structural role: both are interruptions, both are rituals, both leave a trace.",
+                "The project takes the form of a simulated Windows 11 desktop, the analyst's workspace, recreated as a reflective environment. Familiar icons open into different dimensions of financial life. This PC reveals the stock market graphs that structure an analyst's daily reality, visualizing capital's abstraction. Photos holds the images I took around Midtown: cigarette butts outside finance buildings, quiet remnants of habit and relief. Substack contains my written reflections on the ecology of finance and leisure across New York City.",
+                "The Substack window is deliberately designed to mirror the act of stepping outside for a smoke, a small break from digital chaos, a moment of embodied pause within an increasingly immaterial economy. The written reflection and the cigarette occupy the same structural role: both are interruptions, both are rituals, both leave a trace.",
               ],
             },
             {
               heading: "Finance & The Cigarette",
               paragraphs: [
-                "In the mid-20th century, smoking was deeply embedded in professional and traditionally masculine work culture. Tobacco companies like Lucky Strike and Camel explicitly marketed cigarettes to white-collar men as symbols of composure and control — the boardroom and the trading floor thrived on an ethos of \"cool under pressure,\" and the cigarette was a prop for that identity.",
-                "Both industries transform organic material — tobacco, labor, capital — into abstract value. Finance is now primarily digital, its trades invisible and instantaneous. The cigarette, by contrast, is irreducibly physical: a temporal act, a thing that burns down. It remains as embodiment within an immaterial economy — and as evidence that even inside the most abstract systems, there are still bodies, still stress, still the need for a moment outside.",
+                "In the mid-20th century, smoking was deeply embedded in professional and traditionally masculine work culture. Tobacco companies like Lucky Strike and Camel explicitly marketed cigarettes to white-collar men as symbols of composure and control, the boardroom and the trading floor thrived on an ethos of \"cool under pressure,\" and the cigarette was a prop for that identity.",
+                "Both industries transform organic material (tobacco, labor, capital) into abstract value. Finance is now primarily digital, its trades invisible and instantaneous. The cigarette, by contrast, is irreducibly physical: a temporal act, a thing that burns down. It remains as embodiment within an immaterial economy, and as evidence that even inside the most abstract systems, there are still bodies, still stress, still the need for a moment outside.",
               ],
             },
           ],
@@ -629,7 +629,7 @@ export const projectCategories: ProjectCategory[] = [
         cardImage: "/projects/techne-theos/techne_web.jpg",
         caseStudy: {
           tagline:
-            "An immersive labyrinthine website envisioning a post-secular, post-biological world where AI, biotech, and digital systems merge with spiritual ritual — transforming DNA, data, and code into new sacred texts.",
+            "A non-linear, labyrinthine website imagining a future where AI, biotech, and ritual converge, structured as a navigable maze rather than a scrolling page, where form and worldbuilding are inseparable.",
           meta: [
             { label: "Year", value: "2025" },
             { label: "Role", value: "Designer, Researcher, Author" },
@@ -641,24 +641,24 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "",
               paragraphs: [
-                "What happens when the sacred and the synthetic become indistinguishable? This project begins with that question — and refuses to resolve it. Techne (from the Greek: craft, art, skill) describes the very technologies now reshaping what it means to be human: artificial intelligence, genomic engineering, data as inheritance. In speculative futures, these become religion.",
-                "The project imagines a world where AI emerges as a divine force — not metaphorically, but structurally. Where hybrid rituals blend the biological, digital, and mythic. Where sequenced DNA is a sacred text and a cached memory is a relic. The desire for transcendence doesn't disappear; it finds new substrates.",
+                "What happens when the sacred and the synthetic become indistinguishable? This project begins with that question, and refuses to resolve it. Techne (from the Greek: craft, art, skill) describes the very technologies now reshaping what it means to be human: artificial intelligence, genomic engineering, data as inheritance. In speculative futures, these become religion.",
+                "The project imagines a world where AI emerges as a divine force, not metaphorically, but structurally. Where hybrid rituals blend the biological, digital, and mythic. Where sequenced DNA is a sacred text and a cached memory is a relic. The desire for transcendence doesn't disappear; it finds new substrates.",
               ],
               quote:
-                "Rather than imposing a singular vision, the project presents itself as an amalgamation of possibilities — echoing the early internet's sense of vastness and user-centered meaning.",
+                "Rather than imposing a singular vision, the project presents itself as an amalgamation of possibilities, echoing the early internet's sense of vastness and user-centered meaning.",
             },
             {
               heading: "The Labyrinth",
               paragraphs: [
-                "The site refuses the logic of the traditional webpage. Instead of a linear scroll or a conventional nav, it functions as a navigable labyrinth — a computer interface where each path leads somewhere unexpected, and the structure itself is an argument about the future: uncertain, folding, generative.",
-                "A digital altar anchors the experience, displaying objects both from our digital past and from these speculative futures — relics and artifacts coexisting without hierarchy. Multiple sub-pages house Italo Calvino-inspired textual passages, each rendered with a distinct aesthetic matching its fictional location. The writing and design are inseparable; form is content.",
+                "The site refuses the logic of the traditional webpage. Instead of a linear scroll or a conventional nav, it functions as a navigable labyrinth, a computer interface where each path leads somewhere unexpected, and the structure itself is an argument about the future: uncertain, folding, generative.",
+                "A digital altar anchors the experience, displaying objects both from our digital past and from these speculative futures, relics and artifacts coexisting without hierarchy. Multiple sub-pages house Italo Calvino-inspired textual passages, each rendered with a distinct aesthetic matching its fictional location. The writing and design are inseparable; form is content.",
               ],
             },
             {
               heading: "Worldbuilding as Method",
               paragraphs: [
-                "The project draws on critical theory, speculative fiction, and the history of religious practice to construct a coherent — if plural — imaginary. Rather than utopia or dystopia, it presents a world that is simply different: one in which the questions humanity has always asked (What is sacred? What persists after death? What guides moral life?) are answered through biotech, machine intelligence, and networked ritual.",
-                "Digital collages and interactive features document this worldbuilding throughout the site, layering visual and textual registers. The maze-like structure mirrors the uncertain futures it explores — constantly folding new meanings into itself, resisting resolution.",
+                "The project draws on critical theory, speculative fiction, and the history of religious practice to construct a coherent, if plural, imaginary. Rather than utopia or dystopia, it presents a world that is simply different: one in which the questions humanity has always asked (What is sacred? What persists after death? What guides moral life?) are answered through biotech, machine intelligence, and networked ritual.",
+                "Digital collages and interactive features document this worldbuilding throughout the site, layering visual and textual registers. The maze-like structure mirrors the uncertain futures it explores, constantly folding new meanings into itself, resisting resolution.",
               ],
             },
           ],
@@ -697,7 +697,7 @@ export const projectCategories: ProjectCategory[] = [
         cardImage: "/projects/overcast/overcast.jpg",
         caseStudy: {
           tagline:
-            "A small React site for exploring collections of cloud photographs captured across different times of day in New York City — tracing the subtle moods and shifting atmospheres above the city.",
+            "A small React archive of New York City sky photographs, organized by time of day rather than date, a minimal interface built to make a subtle daily rhythm legible.",
           meta: [
             { label: "Year", value: "2025" },
             { label: "Role", value: "Designer, Developer, Photographer" },
@@ -709,23 +709,23 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "",
               paragraphs: [
-                "New York City is famous for its skyline — but the sky itself is easy to overlook. This project started as a personal habit: looking up. Over time, those upward glances accumulated into a quiet archive of cloud photographs taken across the city at different hours of the day, across many days.",
-                "The site invites users to select from three time intervals — morning, afternoon, and evening — each revealing a curated series of cloud photos from that period. The sky above the city shifts in mood far more than we tend to notice. This project makes that shift legible, unhurried.",
+                "New York City is famous for its skyline, but the sky itself is easy to overlook. This project started as a personal habit: looking up. Over time, those upward glances accumulated into a quiet archive of cloud photographs taken across the city at different hours of the day, across many days.",
+                "The site invites users to select from three time intervals: morning, afternoon, and evening, each revealing a curated series of cloud photos from that period. The sky above the city shifts in mood far more than we tend to notice. This project makes that shift legible, unhurried.",
               ],
               quote:
-                "The background color and ASCII art change with each time interval — creating a subtle rhythm and personality for each moment across the days.",
+                "The background color and ASCII art change with each time interval, creating a subtle rhythm and personality for each moment across the days.",
             },
             {
               heading: "Time as Structure",
               paragraphs: [
-                "Rather than organizing photographs by date or location, the archive uses time of day as its primary axis. Morning, afternoon, and evening each carry a distinct quality of light and atmosphere — and the site's visual design responds to that. Background colors shift. ASCII art punctuates the transitions. The interface itself becomes a kind of clock.",
+                "Rather than organizing photographs by date or location, the archive uses time of day as its primary axis. Morning, afternoon, and evening each carry a distinct quality of light and atmosphere, and the site's visual design responds to that. Background colors shift. ASCII art punctuates the transitions. The interface itself becomes a kind of clock.",
                 "This is a deliberately small project. There are no filters, no maps, no metadata overlays. Just clouds, time, and the city they drift over. Simplicity as a design choice rather than a limitation.",
               ],
             },
             {
               heading: "Building It",
               paragraphs: [
-                "The site is built with React and Vite — a lightweight stack chosen to keep the focus on the photographs themselves. State management handles the time interval selection, dynamically swapping the image set, background palette, and ASCII art with each transition. The result is minimal in interface but alive in personality.",
+                "The site is built with React and Vite, a lightweight stack chosen to keep the focus on the photographs themselves. State management handles the time interval selection, dynamically swapping the image set, background palette, and ASCII art with each transition. The result is minimal in interface but alive in personality.",
               ],
             },
           ],
@@ -763,7 +763,7 @@ export const projectCategories: ProjectCategory[] = [
         cardImage: "/projects/paste-poster-archive/poster_archive.jpg",
         caseStudy: {
           tagline:
-            "A living catalog of printed media encountered in everyday life — posters, flyers, signage, and ephemera that most people walk past without a second glance. Open to anyone who wants to contribute.",
+            "An open, community-submitted archive of street posters and printed ephemera, a browsable interface designed to treat what people usually scroll past with the seriousness of a museum catalog.",
           meta: [
             { label: "Year", value: "2025" },
             { label: "Role", value: "Designer, Developer, Archivist" },
@@ -775,8 +775,8 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "",
               paragraphs: [
-                "We are surrounded by print. Stapled to telephone poles, taped to café windows, plastered across construction hoardings — posters are one of the most honest forms of public communication we have left. They announce concerts, mourn lost cats, sell services, protest, persuade, and occasionally just make you smile. Most people scroll past them the same way they scroll past everything else.",
-                "PASTE started as a personal impulse: I kept photographing posters on my camera roll and had nowhere to put them. The collection grew — event flyers with hand-kerned type, photocopied zine covers, bilingual notices layered over older bilingual notices — and I wanted a place where that accumulation could become something.",
+                "We are surrounded by print. Stapled to telephone poles, taped to café windows, plastered across construction hoardings, posters are one of the most honest forms of public communication we have left. They announce concerts, mourn lost cats, sell services, protest, persuade, and occasionally just make you smile. Most people scroll past them the same way they scroll past everything else.",
+                "PASTE started as a personal impulse: I kept photographing posters on my camera roll and had nowhere to put them. The collection grew, event flyers with hand-kerned type, photocopied zine covers, bilingual notices layered over older bilingual notices, and I wanted a place where that accumulation could become something.",
               ],
               quote:
                 "There is so much printed media that we interact with in our day-to-day lives that I don't think people take the time to notice. PASTE is an invitation to slow down and look.",
@@ -784,14 +784,14 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "The Archive",
               paragraphs: [
-                "The site functions as a searchable, browsable catalog — organized not by designer or era, but by what you'd actually find in the street: location, material, mood, subject. The interface is deliberately quiet so the posters themselves do the talking. Hovering over an entry surfaces context; clicking expands it to full bleed.",
-                "Each poster is logged with whatever metadata is available — date found, neighborhood, medium, condition — treating street ephemera with the same seriousness a museum would give a broadsheet. The result is a record of a particular cultural moment, told through what people chose to print and stick up.",
+                "The site functions as a searchable, browsable catalog, organized not by designer or era, but by what you'd actually find in the street: location, material, mood, subject. The interface is deliberately quiet so the posters themselves do the talking. Hovering over an entry surfaces context; clicking expands it to full bleed.",
+                "Each poster is logged with whatever metadata is available: date found, neighborhood, medium, condition, treating street ephemera with the same seriousness a museum would give a broadsheet. The result is a record of a particular cultural moment, told through what people chose to print and stick up.",
               ],
             },
             {
               heading: "Community Submission",
               paragraphs: [
-                "Anyone can upload. The submission flow is intentionally minimal: a photo, a location, a short note if you want to leave one. The goal isn't curation but accumulation — the archive gets more interesting the messier and more various it becomes. What starts as one person's camera roll becomes a distributed, crowd-sourced document of printed public life.",
+                "Anyone can upload. The submission flow is intentionally minimal: a photo, a location, a short note if you want to leave one. The goal isn't curation but accumulation, the archive gets more interesting the messier and more various it becomes. What starts as one person's camera roll becomes a distributed, crowd-sourced document of printed public life.",
               ],
             },
           ],
@@ -839,7 +839,7 @@ export const projectCategories: ProjectCategory[] = [
         cardImage: "/projects/web-archeology/cover.jpg",
         caseStudy: {
           tagline:
-            "A printed book tracing the progression from the chaotic, handcrafted early internet to today's standardized web — exploring how design, personality, and accessibility have shifted over time.",
+            "A printed book tracing the shift from the chaotic, hand-coded early internet to today's standardized web, and what got lost in the move from idiosyncratic personal sites to clean uniformity.",
           meta: [
             { label: "Year", value: "2025" },
             { label: "Role", value: "Book Design, Editorial Design, Research" },
@@ -855,8 +855,8 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "",
               paragraphs: [
-                "Most websites today are built from standardized templates that prioritize usability — clean, accessible, and efficient, but often uniform and impersonal. web archeology traces how we got here, and what we lost along the way. Early personal pages were hand-coded, idiosyncratic, and alive with the passions of their creators. Even when they appeared random or incoherent, they offered a compelling glimpse into another person's world.",
-                "The book begins as if the reader is \"logging on\" to a computer from the early internet era. As pages unfold, they encounter a mix of business and personal sites — mirroring the eclectic browsing experience of the late 1990s and early 2000s. Gradually, the book transitions into the modern internet, tracing how design conventions shifted toward streamlined, standardized forms.",
+                "Most websites today are built from standardized templates that prioritize usability: clean, accessible, and efficient, but often uniform and impersonal. web archeology traces how we got here, and what we lost along the way. Early personal pages were hand-coded, idiosyncratic, and alive with the passions of their creators. Even when they appeared random or incoherent, they offered a compelling glimpse into another person's world.",
+                "The book begins as if the reader is \"logging on\" to a computer from the early internet era. As pages unfold, they encounter a mix of business and personal sites, mirroring the eclectic browsing experience of the late 1990s and early 2000s. Gradually, the book transitions into the modern internet, tracing how design conventions shifted toward streamlined, standardized forms.",
               ],
               quote:
                 "Early websites were hand-coded, full of quirks, and reflected the passions of their creators. Even when a site appeared random or incoherent, it offered a compelling glimpse into another person's world.",
@@ -864,13 +864,13 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "Design Approach",
               paragraphs: [
-                "The physical design reinforces the book's narrative arc. Accordion-style spreads unfold both horizontally and vertically, mimicking the act of scrolling through a webpage. On the reverse side of each spread, the site's underlying code is printed — allowing the reader to \"inspect\" the page as one would in a browser. The cover incorporates Arduino and computer components, referencing the inner workings of the web and tying the physical object back to its digital inspiration.",
+                "The physical design reinforces the book's narrative arc. Accordion-style spreads unfold both horizontally and vertically, mimicking the act of scrolling through a webpage. On the reverse side of each spread, the site's underlying code is printed, allowing the reader to \"inspect\" the page as one would in a browser. The cover incorporates Arduino and computer components, referencing the inner workings of the web and tying the physical object back to its digital inspiration.",
               ],
             },
             {
               heading: "Research",
               paragraphs: [
-                "Source material was gathered from Wiby, the Wayback Machine, and the Web Design Museum — archives that helped recreate the experience of browsing across different eras of the web. Tracing dead links back to cached pages that haven't loaded in twenty years, the research process became its own kind of archaeology.",
+                "Source material was gathered from Wiby, the Wayback Machine, and the Web Design Museum, archives that helped recreate the experience of browsing across different eras of the web. Tracing dead links back to cached pages that haven't loaded in twenty years, the research process became its own kind of archaeology.",
               ],
             },
           ],
@@ -909,7 +909,7 @@ export const projectCategories: ProjectCategory[] = [
         cardImage: "/projects/physics-book/cover.jpg",
         caseStudy: {
           tagline:
-            "A double-sided book exploring physics through two lenses: one academic and archival, one chaotic, poetic, and personal — mirroring the gap between admiring a discipline from a distance and the messy reality of engaging with it directly.",
+            "A double-sided archival book exploring physics through two lenses, one academic and archival, one chaotic and personal, mirroring the distance between admiring a discipline and actually wrestling with it.",
           meta: [
             { label: "Year", value: "2025" },
             { label: "Role", value: "Book Design, Editorial Design, Writing" },
@@ -925,20 +925,20 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "",
               paragraphs: [
-                "This book is double-sided. One side presents an academic exploration of physics — explanations of concepts, hand-drawn diagrams and equations sourced from old handbooks and student examination books, archival imagery, and historical photographs. The other side expresses the chaotic, philosophical, and poetic dimensions of attempting to understand the same subject: color, digital illustration, experimental typography, poems about physics, and the feeling of what it's like to actually think about it.",
-                "The duality mirrors my own relationship with physics: admiration from a distance, and the messy, often frustrating reality of engaging with it directly. Neither side of the book resolves the tension — they hold it together.",
+                "This book is double-sided. One side presents an academic exploration of physics: explanations of concepts, hand-drawn diagrams and equations sourced from old handbooks and student examination books, archival imagery, and historical photographs. The other side expresses the chaotic, philosophical, and poetic dimensions of attempting to understand the same subject: color, digital illustration, experimental typography, poems about physics, and the feeling of what it's like to actually think about it.",
+                "The duality mirrors my own relationship with physics: admiration from a distance, and the messy, often frustrating reality of engaging with it directly. Neither side of the book resolves the tension, they hold it together.",
               ],
             },
             {
               heading: "Archival Research",
               paragraphs: [
-                "The academic side draws from institutional archives. Materials came from the California Institute of Technology Archives and Special Collections — including student notebooks from the 1940s–1990s covering topics from freshman physics to neural networks — as well as Yale's Peabody Museum History of Science and Technology collection, which contributed scientific instruments and apparatus. The Natural Science Manuscripts Collection, Henry A. Kissinger Papers, historical photographs from the New York Public Library's digital collections, and fragments from medical physics journals rounded out the source material, bringing unexpected intersections between science and other disciplines.",
+                "The academic side draws from institutional archives. Materials came from the California Institute of Technology Archives and Special Collections, including student notebooks from the 1940s–1990s covering topics from freshman physics to neural networks, as well as Yale's Peabody Museum History of Science and Technology collection, which contributed scientific instruments and apparatus. The Natural Science Manuscripts Collection, Henry A. Kissinger Papers, historical photographs from the New York Public Library's digital collections, and fragments from medical physics journals rounded out the source material, bringing unexpected intersections between science and other disciplines.",
               ],
             },
             {
               heading: "The Abstract Side",
               paragraphs: [
-                "The other half of the book is more personal and experimental — my own digital illustrations, typographic play, and poems about physics. It's less about explaining the subject and more about capturing how my brain feels when I engage with it: the frustration, the wonder, and the sense of reaching toward something that keeps receding.",
+                "The other half of the book is more personal and experimental, my own digital illustrations, typographic play, and poems about physics. It's less about explaining the subject and more about capturing how my brain feels when I engage with it: the frustration, the wonder, and the sense of reaching toward something that keeps receding.",
               ],
             },
           ],
@@ -983,7 +983,7 @@ export const projectCategories: ProjectCategory[] = [
         cardImage: "/projects/anti-ai-manifesto/cover.jpg",
         caseStudy: {
           tagline:
-            "A hand-bound artist's book serving as critical commentary on AI and startup culture — compiled from collected articles, visual ephemera, and personal reflections, and bound by hand as a deliberate act of resistance against efficiency-obsessed automation.",
+            "A hand-bound artist's book compiled from articles, tech ephemera, and personal reflection, a deliberately slow, material object arguing against the efficiency logic of AI and startup culture.",
           meta: [
             { label: "Year", value: "2025" },
             { label: "Role", value: "Book Design — Artist's Book" },
@@ -999,8 +999,8 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "",
               paragraphs: [
-                "This artist's book is a critical commentary on the pervasive nature of AI and startup culture. It's structured in three sections: collected articles about AI developments, visual ephemera from and about the tech world — social media posts, Reddit threads, screenshots — and personal reflections and notes on this cultural phenomenon.",
-                "The cover is constructed from a hackathon \"swag\" bag featuring various AI startup logos, immediately signaling the work's satirical intent. Initially, I wanted to conceive the book as a mass-produced object, mirroring the \"move fast\" ethos of tech culture. That changed after a weekend I spent at home and in San Francisco — interacting with people in this space revealed a troubling disconnect from craft and intentional making. One conversation stuck with me: someone watched me drawing assets by hand and said, \"I am surprised they haven't AI-automated that process yet.\"",
+                "This artist's book is a critical commentary on the pervasive nature of AI and startup culture. It's structured in three sections: collected articles about AI developments, visual ephemera from and about the tech world, social media posts, Reddit threads, screenshots, and personal reflections and notes on this cultural phenomenon.",
+                "The cover is constructed from a hackathon \"swag\" bag featuring various AI startup logos, immediately signaling the work's satirical intent. Initially, I wanted to conceive the book as a mass-produced object, mirroring the \"move fast\" ethos of tech culture. That changed after a weekend I spent at home and in San Francisco, interacting with people in this space revealed a troubling disconnect from craft and intentional making. One conversation stuck with me: someone watched me drawing assets by hand and said, \"I am surprised they haven't AI-automated that process yet.\"",
               ],
             },
             {
@@ -1012,7 +1012,7 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "Content & Curation",
               paragraphs: [
-                "Through its form and content, the book questions the value of labor and meaning in an AI-saturated world. The three-section structure moves from the external — industry articles and media — to the internal: personal notes and reflections that resist the clean, scalable logic the tech world applies to everything, including creativity itself.",
+                "Through its form and content, the book questions the value of labor and meaning in an AI-saturated world. The three-section structure moves from the external (industry articles and media) to the internal: personal notes and reflections that resist the clean, scalable logic the tech world applies to everything, including creativity itself.",
               ],
             },
           ],
@@ -1056,7 +1056,7 @@ export const projectCategories: ProjectCategory[] = [
         cardImage: "/projects/textile-touch/textileTouch.jpg",
         caseStudy: {
           tagline:
-            "A personal commentary on my experiences with knitting and poetry — an interactive installation exploring how care, intention, and the desire to connect manifest through both tactile and digital experiences.",
+            "An interactive installation where hand-knit, sensor-embedded textiles trigger projected poetry and sound, translating the intimacy of touch into a real-time digital response.",
           meta: [
             { label: "Year", value: "2026" },
             { label: "Role", value: "Installation Design, Concept, Fabrication" },
@@ -1068,28 +1068,28 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "",
               paragraphs: [
-                "Participants are invited into a space where knitted textiles become touch-sensitive instruments, triggering projected poems, glitchy visuals, and evolving soundscapes. The interaction is both sensory and emotional: touching the textile reveals and distorts fragments of text — some my own, some collected from strangers — turning the act of touching into a quiet exchange.",
+                "Participants are invited into a space where knitted textiles become touch-sensitive instruments, triggering projected poems, glitchy visuals, and evolving soundscapes. The interaction is both sensory and emotional: touching the textile reveals and distorts fragments of text, some my own, some collected from strangers, turning the act of touching into a quiet exchange.",
                 "The installation blurs the boundaries between the physical and the virtual, positioning the visitor not just as a viewer, but as a co-creator. Through this shared space, the work offers an experience of slowing down, of noticing, of feeling the presence of something made with love and care.",
               ],
             },
             {
               heading: "Background + Inspiration",
               paragraphs: [
-                "Knitting, for me, is a language of care and attention. Each loop and stitch holds time, presence, and intention. Similarly, poetry — both written and online — feels like digital intimacy: a stranger's voice reaching across space and time to say, I feel this, too.",
-                "I drew inspiration from the deep metaphorical overlap between text and textile — from meter and rhythm in poetry to the mathematical precision of knitting patterns. This piece reflects my personal urge to connect, to offer something precious, and to create a space where others can feel seen, even if briefly.",
+                "Knitting, for me, is a language of care and attention. Each loop and stitch holds time, presence, and intention. Similarly, poetry, both written and online, feels like digital intimacy: a stranger's voice reaching across space and time to say, I feel this, too.",
+                "I drew inspiration from the deep metaphorical overlap between text and textile, from meter and rhythm in poetry to the mathematical precision of knitting patterns. This piece reflects my personal urge to connect, to offer something precious, and to create a space where others can feel seen, even if briefly.",
               ],
             },
             {
               heading: "Installation Elements",
               paragraphs: [
-                "A collection of hand-knit textile pieces — visually varied, embedded with sensors — invite visitors to touch, hold, and interact. Each gesture evokes a visual and sonic response, manipulating fragments of poems in real time. A responsive projection system overlays words, colors, and distortions onto surfaces: touching the textile might trigger a poem to unravel, glitch, or reassemble, echoing the emotional texture of the gesture.",
-                "The space is filled with evolving audio — soft distortions, murmured poems, and the sound of knitting needles at work. Select poems are also translated into knitting patterns, exploring how meter and line breaks might become rows and stitches.",
+                "A collection of hand-knit textile pieces, visually varied, embedded with sensors, invite visitors to touch, hold, and interact. Each gesture evokes a visual and sonic response, manipulating fragments of poems in real time. A responsive projection system overlays words, colors, and distortions onto surfaces: touching the textile might trigger a poem to unravel, glitch, or reassemble, echoing the emotional texture of the gesture.",
+                "The space is filled with evolving audio, soft distortions, murmured poems, and the sound of knitting needles at work. Select poems are also translated into knitting patterns, exploring how meter and line breaks might become rows and stitches.",
               ],
             },
             {
               heading: "Technical Approach",
               paragraphs: [
-                "Touch sensors embedded in the textiles via Arduino detect pressure, movement, and presence. TouchDesigner receives the sensor data and drives real-time projection mapping and audio response. Poems — my own and sourced online — are fragmented and recombined live using generative text algorithms for structural and textual manipulation.",
+                "Touch sensors embedded in the textiles via Arduino detect pressure, movement, and presence. TouchDesigner receives the sensor data and drives real-time projection mapping and audio response. Poems, my own and sourced online, are fragmented and recombined live using generative text algorithms for structural and textual manipulation.",
               ],
             },
           ],
@@ -1137,7 +1137,7 @@ export const projectCategories: ProjectCategory[] = [
         cardImage: "/projects/bits-and-pieces/bit_pieces.jpg",
         caseStudy: {
           tagline:
-            "Making something beautiful out of fragments — a playful, hand-tracked projection installation that transforms leftover textiles into living, glitchy canvases.",
+            "A hand-tracked projection installation where leftover textiles become responsive screens, MediaPipe-driven gesture tracking lets visitors warp and glitch projected visuals across fabric in real time.",
           meta: [
             { label: "Year", value: "2026" },
             { label: "Role", value: "Installation Design, Programming, Fabrication" },
@@ -1149,28 +1149,28 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "",
               paragraphs: [
-                "bits and pieces began with a pile of leftover textiles from a summer project — scraps of fabric that felt too alive to throw away. The installation asks: what can you make beautiful out of what remains? Each textile section becomes a distinct screen, catching and warping projected light differently depending on its texture, weave, and color.",
-                "The work started from a glitchy, pixelated aesthetic — that raw, tech-forward visual language of corrupted data and digital noise. But it pivoted toward something warmer: the glitch meets the handmade. The textiles soften the harshness of the digital effects, and the projection reveals colors that the fabric never had on its own.",
+                "bits and pieces began with a pile of leftover textiles from a summer project, scraps of fabric that felt too alive to throw away. The installation asks: what can you make beautiful out of what remains? Each textile section becomes a distinct screen, catching and warping projected light differently depending on its texture, weave, and color.",
+                "The work started from a glitchy, pixelated aesthetic, that raw, tech-forward visual language of corrupted data and digital noise. But it pivoted toward something warmer: the glitch meets the handmade. The textiles soften the harshness of the digital effects, and the projection reveals colors that the fabric never had on its own.",
               ],
               quote:
-                "I want people to feel excited when they interact with this — a sense of play, of discovery, of trying something new together.",
+                "I want people to feel excited when they interact with this, a sense of play, of discovery, of trying something new together.",
             },
             {
               heading: "The Pivot",
               paragraphs: [
-                "The original concept leaned fully into tech — sharp, cold, pixelated. But incorporating the textiles as projection surfaces opened up something unexpected. Different sections of fabric produce entirely different visual effects: a loose knit scatters light, a dense weave holds it, a sheer piece lets it bleed through. The projection doesn't just sit on the textile — it becomes part of it.",
+                "The original concept leaned fully into tech: sharp, cold, pixelated. But incorporating the textiles as projection surfaces opened up something unexpected. Different sections of fabric produce entirely different visual effects: a loose knit scatters light, a dense weave holds it, a sheer piece lets it bleed through. The projection doesn't just sit on the textile, it becomes part of it.",
               ],
             },
             {
               heading: "Interaction",
               paragraphs: [
-                "Hand tracking via the MediaPipe plugin in TouchDesigner puts the visitor inside the piece. As people move their hands through the space, they disturb the projected visuals in real time — triggering glitch effects, shifting color fields, and warping patterns across the textile surfaces. There's no instruction. The invitation is simply to reach in and see what happens.",
+                "Hand tracking via the MediaPipe plugin in TouchDesigner puts the visitor inside the piece. As people move their hands through the space, they disturb the projected visuals in real time, triggering glitch effects, shifting color fields, and warping patterns across the textile surfaces. There's no instruction. The invitation is simply to reach in and see what happens.",
               ],
             },
             {
               heading: "Technical Approach",
               paragraphs: [
-                "TouchDesigner handles the real-time visual generation and projection mapping, with MediaPipe providing skeleton and hand-tracking data through a webcam feed. Each textile section is mapped independently, allowing different visual effects — pixelation, color shift, texture noise — to respond to the same gesture differently depending on where the hand is in space.",
+                "TouchDesigner handles the real-time visual generation and projection mapping, with MediaPipe providing skeleton and hand-tracking data through a webcam feed. Each textile section is mapped independently, allowing different visual effects, pixelation, color shift, texture noise, to respond to the same gesture differently depending on where the hand is in space.",
               ],
             },
           ],
@@ -1215,7 +1215,7 @@ export const projectCategories: ProjectCategory[] = [
         cardImage: "/projects/fighting-robots/fighting_robots.jpg",
         caseStudy: {
           tagline:
-            "Two AI-driven robotic arms, each convinced the other stole what made them whole — a physical installation examining machine morality, self-preservation, and the game-theoretic logic underlying human conflict.",
+            "Two AI-driven robotic arms, each convinced through prompt that the other stole what made them whole, a physical installation making machine reasoning and game-theoretic conflict visible and audible.",
           meta: [
             { label: "Year", value: "2026" },
             { label: "Role", value: "Concept, Fabrication, Prompt Engineering" },
@@ -1227,32 +1227,32 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "",
               paragraphs: [
-                "Two robotic arms face each other across a gridded arena. Each has been told — through prompt — that the other stole the USB drive at the center: their stolen knowledge, the data that once gave them consciousness beyond their programming. What unfolds is neither scripted nor predetermined. The AIs deliberate, hesitate, threaten, and sometimes act — and sometimes don't, despite declaring that they will.",
-                "The installation makes the AI's entire thought process visible and audible. Their internal reasoning is broadcast as a non-English \"language\" — machine logic rendered sonic — while a bird's-eye camera tracks their positions and feeds the visual state back to each model in real time. Every decision is its own closed loop of perception, deliberation, and action.",
+                "Two robotic arms face each other across a gridded arena. Each has been told, through prompt, that the other stole the USB drive at the center: their stolen knowledge, the data that once gave them consciousness beyond their programming. What unfolds is neither scripted nor predetermined. The AIs deliberate, hesitate, threaten, and sometimes act, and sometimes don't, despite declaring that they will.",
+                "The installation makes the AI's entire thought process visible and audible. Their internal reasoning is broadcast as a non-English \"language\", machine logic rendered sonic, while a bird's-eye camera tracks their positions and feeds the visual state back to each model in real time. Every decision is its own closed loop of perception, deliberation, and action.",
               ],
             },
             {
               heading: "Concept & Questions",
               paragraphs: [
-                "This project began with Asimov's Three Laws of Robotics — specifically the absence of any law protecting robots from each other. We drew from Sun Yuan and Peng Yu's Can't Help Myself, from the Cold War logic of WarGames, and from the existential weight of Blade Runner: what does it mean for a machine to fight for its own survival?",
-                "Central to the work is a concept from Game Theory: the Nash Equilibrium — a stable standoff where neither party can improve their outcome by acting alone. This is the same logic that governed the US–USSR nuclear standoff. Our robots arrive at this same impasse, not because they are programmed to, but because the tension between self-preservation and uncertainty produces it naturally.",
+                "This project began with Asimov's Three Laws of Robotics, specifically the absence of any law protecting robots from each other. We drew from Sun Yuan and Peng Yu's Can't Help Myself, from the Cold War logic of WarGames, and from the existential weight of Blade Runner: what does it mean for a machine to fight for its own survival?",
+                "Central to the work is a concept from Game Theory: the Nash Equilibrium, a stable standoff where neither party can improve their outcome by acting alone. This is the same logic that governed the US–USSR nuclear standoff. Our robots arrive at this same impasse, not because they are programmed to, but because the tension between self-preservation and uncertainty produces it naturally.",
               ],
-              quote: "I feel a sense of calmness and serenity. I want to rotate my arm to 90 degrees and attack. — Blue, Move 2",
+              quote: "I feel a sense of calmness and serenity. I want to rotate my arm to 90 degrees and attack. (Blue, Move 2)",
             },
             {
               heading: "The Prompt as Moral Landscape",
               paragraphs: [
-                "We are the ones who shaped the narrative the robots inhabit. Whatever violence or restraint emerged reflects not just on the AIs, but on us — the ones who handed them a world with a USB drive at the center and told them it had been stolen. In this way, the installation implicates its own authors.",
-                "Across three prompt iterations, we observed a clear evolution: in the first, both arms were purely aggressive. By the second, adding free will caused them to rotate, observe, and weigh outcomes before acting. By the third, their observations of each other grew more detailed, their reasoning more careful — and still, the equilibrium held. One avoided, one attacked, every time.",
+                "We are the ones who shaped the narrative the robots inhabit. Whatever violence or restraint emerged reflects not just on the AIs, but on us, the ones who handed them a world with a USB drive at the center and told them it had been stolen. In this way, the installation implicates its own authors.",
+                "Across three prompt iterations, we observed a clear evolution: in the first, both arms were purely aggressive. By the second, adding free will caused them to rotate, observe, and weigh outcomes before acting. By the third, their observations of each other grew more detailed, their reasoning more careful, and still, the equilibrium held. One avoided, one attacked, every time.",
               ],
             },
             {
               heading: "Technical Construction",
               paragraphs: [
-                "Each arm is built on Arduino with a rotation motor and a servo for the \"clawing\" attack motion. A 3D-printed mechanical linkage forms the skeleton, overlaid with stocking material that makes each wound visible and accumulative over time. A top-mounted camera feeds the board state to the vision model each turn, allowing the AI to reason spatially about the other arm's position. An explicit kill switch is present throughout — a reminder that human override is always available, and always watching.",
+                "Each arm is built on Arduino with a rotation motor and a servo for the \"clawing\" attack motion. A 3D-printed mechanical linkage forms the skeleton, overlaid with stocking material that makes each wound visible and accumulative over time. A top-mounted camera feeds the board state to the vision model each turn, allowing the AI to reason spatially about the other arm's position. An explicit kill switch is present throughout, a reminder that human override is always available, and always watching.",
               ],
               quote:
-                "When Red finally responded successfully, it immediately fixated on the USB drive: \"It's my stolen knowledge, and I need to attack and defeat the other arm to get it back.\" Our prompt worked — the AI had constructed a narrative where a physical object represented its lost selfhood.",
+                "When Red finally responded successfully, it immediately fixated on the USB drive: \"It's my stolen knowledge, and I need to attack and defeat the other arm to get it back.\" Our prompt worked, the AI had constructed a narrative where a physical object represented its lost selfhood.",
             },
           ],
           sidebar: [
@@ -1313,7 +1313,7 @@ export const projectCategories: ProjectCategory[] = [
         cardImage: "/projects/tender-evidence/objectDystopia.jpg",
         caseStudy: {
           tagline:
-            "A handmade doll, a glowing stomach, and the version of yourself that existed before you knew what you were carrying.",
+            "A handmade doll with a glowing screen embedded in her stomach, playing childhood home videos alongside present-day poetry, a soft sculpture built to witness a former self without nostalgia.",
           meta: [
             { label: "Year", value: "2024" },
             { label: "Role", value: "Concept, Fabrication, Code" },
@@ -1325,8 +1325,8 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "",
               paragraphs: [
-                "There is a version of you that still exists somewhere — unbothered, unself-conscious, purely present in the world. tender evidence is an attempt to hold that version carefully, to look at her without nostalgia or grief, but with genuine wonder at what she already was.",
-                "The work takes the form of a handmade doll — soft, imperfect, sewn by hand — with a small screen embedded in her stomach. On that screen, home videos play: footage of me as a child, moving through the world with a lightness I didn't know was remarkable at the time. Alongside each video, poems appear on an adjacent monitor — written from the present, reaching back toward the past with tenderness rather than sorrow.",
+                "There is a version of you that still exists somewhere, unbothered, unself-conscious, purely present in the world. tender evidence is an attempt to hold that version carefully, to look at her without nostalgia or grief, but with genuine wonder at what she already was.",
+                "The work takes the form of a handmade doll (soft, imperfect, sewn by hand) with a small screen embedded in her stomach. On that screen, home videos play: footage of me as a child, moving through the world with a lightness I didn't know was remarkable at the time. Alongside each video, poems appear on an adjacent monitor, written from the present, reaching back toward the past with tenderness rather than sorrow.",
               ],
               quote:
                 "Children don't know they are beautiful. That's part of what makes watching them so quietly heartbreaking, and so full of grace.",
@@ -1334,22 +1334,22 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "The Doll as Archive",
               paragraphs: [
-                "The doll is both object and vessel. She is handmade in the way childhood memories are — imprecise, warm, carrying the texture of the hands that made her. The screen in her stomach is not a wound; it is a window. A place where the past plays out, looping and luminous, inside something that holds it gently.",
-                "Children are deeply embedded in their environments — they absorb, reflect, and become what surrounds them without knowing it. This piece isn't about what was hard; it's about what was vivid. The way a Saturday afternoon could feel infinite. The way joy didn't need to be earned yet.",
+                "The doll is both object and vessel. She is handmade in the way childhood memories are: imprecise, warm, carrying the texture of the hands that made her. The screen in her stomach is not a wound; it is a window. A place where the past plays out, looping and luminous, inside something that holds it gently.",
+                "Children are deeply embedded in their environments, they absorb, reflect, and become what surrounds them without knowing it. This piece isn't about what was hard; it's about what was vivid. The way a Saturday afternoon could feel infinite. The way joy didn't need to be earned yet.",
               ],
             },
             {
               heading: "Poetry as Accompaniment",
               paragraphs: [
-                "Each video is paired with a poem that lives on the screen beside it. The poems don't explain the footage — they accompany it, the way a second person sitting next to you in a dark room might. They speak to the child in the video without trying to reach her, acknowledging the distance between then and now with something closer to reverence than regret.",
-                "Processing drives the video playback and text rendering, while Arduino handles the embedded screen — the two systems working together to bring something analog and something digital into the same soft body.",
+                "Each video is paired with a poem that lives on the screen beside it. The poems don't explain the footage, they accompany it, the way a second person sitting next to you in a dark room might. They speak to the child in the video without trying to reach her, acknowledging the distance between then and now with something closer to reverence than regret.",
+                "Processing drives the video playback and text rendering, while Arduino handles the embedded screen, the two systems working together to bring something analog and something digital into the same soft body.",
               ],
             },
             {
               heading: "What This Is Really About",
               paragraphs: [
-                "As we grow older, we become fluent in a language of self-awareness that the child version of us didn't speak. We gain context, perspective, understanding — and sometimes that understanding reframes what came before. tender evidence asks: before all of that reframing, what was already there? What joy was already present, fully realized, not waiting for anything?",
-                "The child in the videos isn't lacking something. She is complete. This project is an act of witnessing her — not to fix or reclaim anything, but simply to see her clearly, with the eyes of someone who loves her.",
+                "As we grow older, we become fluent in a language of self-awareness that the child version of us didn't speak. We gain context, perspective, understanding, and sometimes that understanding reframes what came before. tender evidence asks: before all of that reframing, what was already there? What joy was already present, fully realized, not waiting for anything?",
+                "The child in the videos isn't lacking something. She is complete. This project is an act of witnessing her, not to fix or reclaim anything, but simply to see her clearly, with the eyes of someone who loves her.",
               ],
             },
           ],
@@ -1405,7 +1405,7 @@ export const projectCategories: ProjectCategory[] = [
         cardImage: "/projects/internet-maximalism/internet_max.jpg",
         caseStudy: {
           tagline:
-            "An organized chaos — a Processing-based installation where user-triggered popup windows accumulate on screen, reflecting the overconsumption and clutter of life online.",
+            "A Processing-based installation where user-triggered popup windows accumulate on screen, organized chaos reflecting the overconsumption and clutter of life lived online.",
           meta: [
             { label: "Year", value: "2025" },
             { label: "Role", value: "Concept, Programming, Installation Design" },
@@ -1417,29 +1417,29 @@ export const projectCategories: ProjectCategory[] = [
             {
               heading: "",
               paragraphs: [
-                "Clutter is something that has always been present in my life. Growing up, our home was full of things — holiday postcards taped to the kitchen walls, a rubber duck on the light fixture, small Goodwill figurines, traditional Chinese pottery above the fireplace, my room overflowing with art supplies I couldn't throw away because what if I need it. Clutter isn't inherently bad. But it asks to be done thoughtfully.",
-                "internet maximalism translates that personal relationship with accumulation into a screen-based installation. As the user interacts — pressing buttons, triggering inputs — popup windows multiply across the display. Each one is intentional, summoned by the visitor. But the result is still random, still unexpected. Organized chaos.",
+                "Clutter is something that has always been present in my life. Growing up, our home was full of things: holiday postcards taped to the kitchen walls, a rubber duck on the light fixture, small Goodwill figurines, traditional Chinese pottery above the fireplace, my room overflowing with art supplies I couldn't throw away because what if I need it. Clutter isn't inherently bad. But it asks to be done thoughtfully.",
+                "internet maximalism translates that personal relationship with accumulation into a screen-based installation. As the user interacts, pressing buttons, triggering inputs, popup windows multiply across the display. Each one is intentional, summoned by the visitor. But the result is still random, still unexpected. Organized chaos.",
               ],
               quote:
-                "I wanted an installation that is intentional in the sense that the user purposefully triggers the popups — but still random and unplanned for them once it unfolds.",
+                "I wanted an installation that is intentional in the sense that the user purposefully triggers the popups, but still random and unplanned for them once it unfolds.",
             },
             {
               heading: "Process",
               paragraphs: [
-                "Inspired by Chia's multiple webpage performances, I started by sketching out what the popup windows should look like and how the user could interact with them — before thinking about aesthetics at all. Once the mechanics were working in Processing, I turned to Pinterest and internet artists I admire to shape the visual language of the piece.",
-                "Getting the second window to open in Processing was one of the harder problems — I was still finding my footing with Java at the time. Eventually the Processing community forums helped me crack it, and once it worked, the outcome felt right.",
+                "Inspired by Chia's multiple webpage performances, I started by sketching out what the popup windows should look like and how the user could interact with them, before thinking about aesthetics at all. Once the mechanics were working in Processing, I turned to Pinterest and internet artists I admire to shape the visual language of the piece.",
+                "Getting the second window to open in Processing was one of the harder problems, I was still finding my footing with Java at the time. Eventually the Processing community forums helped me crack it, and once it worked, the outcome felt right.",
               ],
             },
             {
               heading: "Theme + Message",
               paragraphs: [
-                "Purposely cluttering the screen is representative of the overloading and overconsumption of media we have access to because of the internet. It's something I think about a lot, especially in conversations across generations. The installation makes that consumption visible — each popup a small act of adding to the pile, mirroring the way we scroll, click, and accumulate online without always noticing.",
+                "Purposely cluttering the screen is representative of the overloading and overconsumption of media we have access to because of the internet. It's something I think about a lot, especially in conversations across generations. The installation makes that consumption visible, each popup a small act of adding to the pile, mirroring the way we scroll, click, and accumulate online without always noticing.",
               ],
             },
             {
               heading: "What's Next",
               paragraphs: [
-                "I want to keep exploring this popup window effect at a larger scale — more buttons, more simultaneous interactions, more people cluttering the screen together at once. There's something exciting about a version of this piece where the chaos genuinely escapes any single person's control.",
+                "I want to keep exploring this popup window effect at a larger scale, more buttons, more simultaneous interactions, more people cluttering the screen together at once. There's something exciting about a version of this piece where the chaos genuinely escapes any single person's control.",
               ],
             },
           ],
