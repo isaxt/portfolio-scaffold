@@ -1,4 +1,3 @@
-// components/ui/FunThings.tsx
 "use client";
 
 import { ImageStrip, type StripImage } from "./ImageStrip";
@@ -10,7 +9,25 @@ type FunGroup = {
   images: StripImage[];
 };
 
+// Each group renders as its own horizontal strip with a small title/credit
+// line above it — good fit for a set of photos from one event or piece,
+// as opposed to a single unrelated snapshot (which can just be a
+// one-image group with no credit).
 const GROUPS: FunGroup[] = [
+  {
+    id: "dream-machine",
+    title: "Lincoln Center: DreamMachine VR Installation/Experience",
+    images: [
+      { src: "/fun/dream-machine/dream-01.jpg", alt: "Lincoln Center's Summer for the City stage with disco ball rigging in daylight" },
+      { src: "/fun/dream-machine/dream-02.jpg", alt: "Visitors seated at illuminated tables wearing VR headsets" },
+      { src: "/fun/dream-machine/dream-03.jpg", alt: "Purple-lit stage with a red paint-splash projection and greenery installation" },
+      { src: "/fun/dream-machine/dream-04.jpg", alt: "Crowd gathered at dusk beneath the disco ball during a live performance" },
+      { src: "/fun/dream-machine/dream-05.jpg", alt: "Iridescent 3D avatar rendered inside the DreamMachine VR world" },
+      { src: "/fun/dream-machine/dream-06.jpg", alt: "Close-up of VR controllers and headset resting on a lit table" },
+      { src: "/fun/dream-machine/dream-07.jpg", alt: "Rows of VR headsets lined up and ready for visitors" },
+      { src: "/fun/dream-machine/dream-logo.jpg", alt: "DreamMachine event logo" },
+    ],
+  },
   {
     id: "guggenheim-float",
     title: "Guggenheim Late Shift: FLOAT",
